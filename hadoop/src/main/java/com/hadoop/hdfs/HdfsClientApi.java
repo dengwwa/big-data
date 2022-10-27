@@ -49,7 +49,6 @@ public class HdfsClientApi {
 
     @Test
     public void download() throws IOException {
-        // useRawLocalFileSystem 是否开启文件校验
         fileSystem.copyToLocalFile(false, new Path("/hadoopApi/phone_data.txt"), new Path("."), true);
 //        fileSystem.copyToLocalFile(false, new Path("/hadoopApi/phone_data.txt"),new Path("."),false);
     }
@@ -76,7 +75,7 @@ public class HdfsClientApi {
             System.out.println(fileStatus.getBlockSize());
             System.out.println(fileStatus.getPath().getName());
 
-            // 获取块信息
+            // block info
             BlockLocation[] blockLocations = fileStatus.getBlockLocations();
             System.out.println(Arrays.toString(blockLocations));
         }
