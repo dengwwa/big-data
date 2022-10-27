@@ -10,6 +10,9 @@ import java.io.IOException;
 import java.net.URI;
 import java.util.Arrays;
 
+/**
+ * using hadoop basic api to operate hadoop cluster
+ */
 public class HdfsClientApi {
     private FileSystem fileSystem;
 
