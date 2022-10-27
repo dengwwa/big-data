@@ -3,3 +3,4 @@
 /.idea/compiler.xml
 /hadoop/target/
 /.idea/.gitignore
+/.idea/vcs.xml
