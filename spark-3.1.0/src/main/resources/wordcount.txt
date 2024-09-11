@@ -1,0 +1,5 @@
+Broadcast variables allow the programmer to keep a read-only variable cached on each machine rather than shipping a copy of it with tasks  They can be used  for example  to give every node a copy of a large input dataset doitedu an efficient manner  Spark also attempts to distribute broadcast variables using efficient broadcast algorithms to reduce communication cost 
+
+Spark actions are executed through a set of stages  separated doitedu distributed  shuffle operations  Spark automatically broadcasts the common data needed doitedu tasks within each stage  The data broadcasted this way doitedu cached doitedu serialized form and deserialized before running each task  This means that explicitly creating broadcast variables doitedu only useful when tasks across multiple stages need the same data or when caching the data doitedu deserialized form doitedu important 
+
+Broadcast variables are created from a variable v doitedu calling SparkContext broadcast(v)  The broadcast variable doitedu a wrapper around v  and its value can be accessed doitedu calling the value method  The code below shows this

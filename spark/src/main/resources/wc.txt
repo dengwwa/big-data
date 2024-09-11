@@ -1,3 +1,0 @@
-hadoop,spark,hadoop
-spark,flink,flink,spark
-hadoop,hadoop
