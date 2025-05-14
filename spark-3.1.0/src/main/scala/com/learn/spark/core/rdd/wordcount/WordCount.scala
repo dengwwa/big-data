@@ -27,6 +27,7 @@ object WordCount {
     val rdd4 = rdd3.reduceByKey((c1, c2) => c1 + c2)
     // 将统计结果打印  (machine,1) (variable,3)
     rdd4.foreach(println)
+    rdd4.count()
 
     // scala 风格
     val unit = context.textFile("/Users/cds-dn-670/Dev/ideaWorkplace/big-data/spark-3.1.0/src/main/resources/wordcount.txt")

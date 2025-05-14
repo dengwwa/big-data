@@ -1,0 +1,24 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.dengwwa</groupId>
+        <artifactId>big-data</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <artifactId>kafka-2.0.0</artifactId>
+
+    <dependencies>
+<!--        <dependency>-->
+<!--            <groupId>org.apache.kafka</groupId>-->
+<!--            <artifactId>kafka-clients</artifactId>-->
+<!--            <version>2.0.0</version>-->
+<!--        </dependency>-->
+        <dependency>
+            <groupId>com.aliyun.hbase</groupId>
+            <artifactId>alihbase-client</artifactId>
+            <version>2.0.7</version>
+        </dependency>
+    </dependencies>
+
+</project>

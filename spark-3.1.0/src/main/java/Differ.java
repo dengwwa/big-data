@@ -17,8 +17,9 @@ public class Differ {
         Set<String> srSet = new HashSet<>(sr);
         srSet.removeAll(esSet);
 //        esSet.removeAll(srSet);
-        String collect = srSet.stream().map(product_id -> "\"" + product_id + "\"").collect(Collectors.joining(","));
-        System.out.println(collect);
+        System.out.println(srSet);
+//        String collect = srSet.stream().map(product_id -> "\"" + product_id + "\"").collect(Collectors.joining(","));
+//        System.out.println(collect);
         writeIdsToFile(srSet,"/Users/cds-dn-670/Dev/ideaWorkplace/learn/big-data/spark-3.1.0/src/main/java/result.txt");
     }
 

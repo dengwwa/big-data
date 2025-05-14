@@ -1,0 +1,9 @@
+<!DOCTYPE suppressions PUBLIC "-//Checkstyle//DTD SuppressionFilter 1.2//EN"
+        "https://checkstyle.org/dtds/suppressions_1_2.dtd">
+<suppressions>
+    <!-- 忽略 Lombok 生成的代码 -->
+    <suppress checks=".*" files=".*(Data|Getter|Setter|Builder|AllArgsConstructor)\.java"/>
+
+    <!-- 忽略测试类中的特定规则 -->
+    <suppress checks="JavadocMethod" files=".*Test\.java"/>
+</suppressions> 

@@ -1,0 +1,18 @@
+server:
+  port: 52000
+
+knife4j:
+  enable: true
+  documents:
+    - group: 1.0
+      name: 用户手册
+      locations: classpath:markdown/use/*
+    - group: 1.0
+      name: 参与贡献
+      locations: classpath:markdown/contribute/*
+  setting:
+    enable-home-custom: true
+    home-custom-location: classpath:markdown/home.md
+    enableSwaggerModels: false
+    enableDocumentManage: false
+    enableGroup: false
