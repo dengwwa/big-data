@@ -64,6 +64,9 @@
                     <suppressionsLocation>checkstyle/suppressions.xml</suppressionsLocation>
                     <includeTestSourceDirectory>true</includeTestSourceDirectory>
                     <failOnViolation>true</failOnViolation> <!-- 检查失败中断构建 -->
+                    <propertyExpansion>
+                        config_loc=${project.basedir}/checkstyle
+                    </propertyExpansion>
                 </configuration>
                 <executions>
                     <execution>
